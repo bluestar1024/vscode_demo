@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/fcb.h
+
+../inc/fsqu.h
+
+../inc/mydebug.h
+
+../inc/myrun.h
+
+/home/dong/vscode_demo/test/main.c
+stdio.h
+-
+main.h
+/home/dong/vscode_demo/test/main.h
+mydebug.h
+/home/dong/vscode_demo/test/mydebug.h
+myrun.h
+/home/dong/vscode_demo/test/myrun.h
+fsqu.h
+/home/dong/vscode_demo/test/fsqu.h
+fcb.h
+/home/dong/vscode_demo/test/fcb.h
+
+/home/dong/vscode_demo/test/main.h
+
+/home/dong/vscode_demo/test/src/mydebug.c
+stdio.h
+-
+mydebug.h
+/home/dong/vscode_demo/test/src/mydebug.h
+
+/home/dong/vscode_demo/test/src/myrun.c
+stdio.h
+-
+myrun.h
+/home/dong/vscode_demo/test/src/myrun.h
+

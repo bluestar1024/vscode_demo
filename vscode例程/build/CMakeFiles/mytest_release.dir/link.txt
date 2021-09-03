@@ -1,0 +1,1 @@
+gcc  -DNDEBUG -O0 -Wall -Werror   CMakeFiles/mytest_release.dir/main.c.o CMakeFiles/mytest_release.dir/src/mydebug.c.o CMakeFiles/mytest_release.dir/src/myrun.c.o  -o mytest_release  -L/home/dong/vscode_demo/test/lib/squ  -L/home/dong/vscode_demo/test/lib/cb -rdynamic -llsqu -llcb -Wl,-rpath,/home/dong/vscode_demo/test/lib/squ:/home/dong/vscode_demo/test/lib/cb 

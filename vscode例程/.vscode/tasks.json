@@ -1,0 +1,64 @@
+{
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceRoot}/build"
+    },
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "cmake for debug",
+            "command": "cmake -D CMAKE_BUILD_TYPE=debug ..",
+            "args": []
+        },
+        {
+            "type": "shell",
+            "label": "make for debug",
+            "command": "make",
+            "args": [],
+            "dependsOn": [
+                "cmake for debug"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "run for debug",
+            "command": "./mytest_debug",
+            "args": [],
+            "dependsOn": [
+                "make for debug"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "cmake for release",
+            "command": "cmake -D CMAKE_BUILD_TYPE=release ..",
+            "args": []
+        },
+        {
+            "type": "shell",
+            "label": "make for release",
+            "command": "make",
+            "args": [],
+            "dependsOn": [
+                "cmake for release"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "run for release",
+            "command": "./mytest_release",
+            "args": [],
+            "dependsOn": [
+                "make for release"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
